@@ -674,7 +674,7 @@ spec:
       #                            #
       ##############################
       - name: memphis-control-plane
-        image: memphisos/memphis-control-plane:latest
+        image: memphisos/memphis-control-plane:beta
         imagePullPolicy: Always
         ports:
             - containerPort: 5555
